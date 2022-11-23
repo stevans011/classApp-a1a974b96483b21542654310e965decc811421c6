@@ -6,11 +6,22 @@ import {Home} from './pages/Home'
 import {About} from './pages/About'
 import {Contact} from './pages/Contact'
 
+
+
+const NavData = [
+
+  { name: "Home", path: "/", public:true},
+  { name: "About", path: "/about", public:true},
+  { name: "Contact", path: "/contact", public:true}
+
+]
+
+
 function App() {
   return (
     <div className="App">
 
-      <Header title="My app"/>
+      <Header title="My app" headernav ={ NavData } />
       
       <div className="container-fluid">
         <div className="row">
